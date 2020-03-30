@@ -1,0 +1,13 @@
+#mapa-mapbox{
+    width: 1400px;
+height: 650px;
+background-color: red;
+}
+.marcador{
+    background-image: url('https://res.cloudinary.com/dhxoossdl/image/upload/c_scale,w_256/v1585603388/images_kuncjz.jpg');
+background-size: cover;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+cursor: pointer;
+}
