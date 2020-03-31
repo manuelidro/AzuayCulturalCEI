@@ -1,34 +1,41 @@
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../../router.animations';
 
+
+
 @Component({
     selector: 'app-dashboard',
     templateUrl: './dashboard.component.html',
     styleUrls: ['./dashboard.component.scss'],
     animations: [routerTransition()]
+    
 })
 export class DashboardComponent implements OnInit {
     public alerts: Array<any> = [];
     public sliders: Array<any> = [];
 
     constructor() {
+        
         this.sliders.push(
+        
             {
+        
                 imagePath: 'assets/images/corpus.png',
-                label: 'Corpus Christi',
+                
+                label : 'Corpus Christi',
                 text:
                     'Rituales de fe, tradiciones y dulces en Cuenca por el Corpus Christi'
             },
             {
-                imagePath: 'assets/images/slider2.jpg',
-                label: 'Second slide label',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                imagePath: 'assets/images/rotofest.png',
+                label: 'Roto Fest',
+                text: 'El Festival de Cultura Electrónica y música independiente más grande del Ecuador..'
             },
             {
-                imagePath: 'assets/images/slider3.jpg',
-                label: 'Third slide label',
+                imagePath: 'assets/images/independencia.png',
+                label: 'Independencia de Cuenca',
                 text:
-                    'Praesent commodo cursus magna, vel scelerisque nisl consectetur.'
+                    'Una de las fiestas más importantes de Cuenca'
             }
    
         );
