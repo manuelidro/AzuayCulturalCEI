@@ -32,7 +32,7 @@ export class DashboardComponent implements OnInit {
             }
    
         );
-
+/*
         this.alerts.push(
             {
                 id: 1,
@@ -49,8 +49,14 @@ export class DashboardComponent implements OnInit {
                 Voluptates est animi quibusdam praesentium quam, et perspiciatis,
                 consectetur velit culpa molestias dignissimos
                 voluptatum veritatis quod aliquam! Rerum placeat necessitatibus, vitae dolorum`
+            
             }
         );
+        Alertas dashboard
+           <hr />
+    <ngb-alert [type]="alert.type" (close)="closeAlert(alert)" *ngFor="let alert of alerts">{{ alert.message }}</ngb-alert>
+    <hr />
+        */
     }
 
     ngOnInit() {}

@@ -16,26 +16,25 @@
     <hr>
     <div class="row">
         <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'primary'" [icon]="'fa-comments'" [count]="26" [label]="'Comentarios Nuevos!'" ></app-stat>
+            <app-stat [bgClass]="'danger'" [routerLink]="['/tables']" [icon]="'fa-tasks'" [count]="5" [label]="'Eventos Destacados'" ></app-stat>
         </div>
         <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'warning'" [icon]="'fa-tasks'" [count]="12" [label]="'Tareas Nuevas!'" ></app-stat>
+            <app-stat [bgClass]="'warning'"  [routerLink]="['/components']" [icon]="'fa-map'" [count]="5" [label]="'Mapa de Eventos'" ></app-stat>
         </div>
         <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'success'" [icon]="'fa-shopping-cart'" [count]="124" [label]="'New Orders!'" ></app-stat>
+            <app-stat [bgClass]="'danger'" [routerLink]="['/grid']" [icon]="'fa-star'" [count]="1" [label]="'Eventos Favoritos'" ></app-stat>
         </div>
         <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'danger'" [icon]="'fa-support'" [count]="13" [label]="'New Tickets!'"></app-stat>
+            <app-stat [bgClass]="'warning'" [routerLink]="['/charts']" [icon]="'fa-apple'" [count]="2" [label]="'Comida Azuay'"></app-stat>
         </div>
     </div>
-    <hr />
-    <ngb-alert [type]="alert.type" (close)="closeAlert(alert)" *ngFor="let alert of alerts">{{ alert.message }}</ngb-alert>
-    <hr />
+<br>
+    
     <div class="row">
         <div class="col-lg-8">
             <div class="card card-default">
                 <div class="card-header">
-                    <i class="fa fa-clock-o fa-fw"></i> Eventos Azuay
+                    <i class="fa fa-tasks"></i> Eventos Azuay
                 </div>
                 <!-- /.card-header -->
                 <app-timeline></app-timeline>
