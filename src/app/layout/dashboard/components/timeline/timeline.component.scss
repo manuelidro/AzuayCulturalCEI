@@ -178,3 +178,12 @@
         border-left-width: 0;
     }
 }
+.card-body{
+    background-color: red($color: #000000);
+}
+.timeline-body{
+    background-color: blue($color: #da0f0f);
+}
+.roto{
+    align-items: center;
+}
