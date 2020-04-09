@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AuthGuard } from './shared';
 import { RecuperarComponent } from './recuperar/recuperar.component';
 
+
 @NgModule({
     imports: [
         CommonModule,
