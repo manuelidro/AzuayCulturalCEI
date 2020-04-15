@@ -2,8 +2,20 @@ label {
     color: green;
   }
   .row{
-    background-color: red($color: #000000);
+    background-color: lightness($color: #f12832);
   }
   .card-header{
     background-color: red($color: #000000);
   }
+
+  .text{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-shadow: 0px 0px 3px;
+  }
+
+  
