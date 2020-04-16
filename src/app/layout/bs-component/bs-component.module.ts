@@ -21,6 +21,7 @@ import {
     TimepickerComponent
 } from './components';
 import { PageHeaderModule } from '../../shared';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
     imports: [
@@ -29,7 +30,8 @@ import { PageHeaderModule } from '../../shared';
         FormsModule,
         ReactiveFormsModule,
         NgbModule,
-        PageHeaderModule
+        PageHeaderModule,
+        GoogleMapsModule
     ],
     declarations: [
         BsComponentComponent,
