@@ -1,27 +1,35 @@
 <div class="login-page" [@routerTransition]>
     <div class="row justify-content-md-center">
         <div class="col-md-4">
-            <img src="assets/images/logo.png" width="150px" class="user-avatar" />
-            <h1>AzuayCultural</h1>
-            <form role="form">
-                <div class="form-content">
-                    <div class="form-group">
-                        <input type="text" ng-model="name" class="form-control input-underline input-lg" id="" placeholder="{{ 'Email' | translate }}">
-                    </div>
+            <img class="user-avatar" src="assets/images/logo.png" width="150px" />
+            <h1>Azuay Cultural</h1>
+            <form #formRegister="ngForm" (ngSubmit)="onLogin()">
 
-                    <div class="form-group">
-                        <input type="password" class="form-control input-underline input-lg" id="" placeholder="{{ 'Password' | translate }}">
-                    </div>
+
+
+                <div class="form">
+                <input name="email" class="form-control"  type="email" placeholder="Correo Electrónico" [(ngModel)]="user.email" required>
+
                 </div>
-                <a class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLoggedin()">{{ 'Log in' | translate }}</a>
+
+
+
+                <div class="form">
+                <input name="password" class="form-control" placeholder="Contraseña" type="password" [(ngModel)]="user.password" required>
+
+            </div>
+
+
+                <div class="form">
+                <button type="submit" class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLogin()"
+                    (click)="onLoggedin()">Ingresar</button>
                 &nbsp;
-                <a class="btn rounded-btn" [routerLink]="['/signup']">{{ 'Register' | translate }}</a>
-               <p></p>
-                <div>
-                    <p>Olvidaste Usuario o Contraseña:   <a href="http://www.google.com">Click aquí</a>
-                    </p> 
-                    </div>
- 
+            </div>
+                <div class="form">
+                <a class="btn rounded-btn" [routerLink]="['/signup']">¿No tienes una cuenta?</a>
+            </div>
+
+
             </form>
         </div>
     </div>

@@ -164,7 +164,7 @@ $topnav-background-color: #0C0C0C;
         font-size: 23px;
     }
     &:hover {
-        background: darken($topnav-background-color, 5%);
+        background: red;
         color: #fff;
     }
     border-top: 1px solid #999;
