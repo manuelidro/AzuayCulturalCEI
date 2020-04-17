@@ -13,34 +13,24 @@ import javax.persistence.Id;
 
 /**
  *
- * @author alumno
+ * @author Fernando
  */
 @Entity
-public class Persona implements Serializable {
-
-    private static final long serialVersionUID = 1L;
+public class Login implements Serializable {
+     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long idPersona;
+    private Long idLogin;
 
-    private String name;
     private String email;
     private String password;
 
-    public Long getIdPersona() {
-        return idPersona;
+    public Long getIdLogin() {
+        return idLogin;
     }
 
-    public void setIdPersona(Long idPersona) {
-        this.idPersona = idPersona;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setIdLogin(Long idLogin) {
+        this.idLogin = idLogin;
     }
 
     public String getEmail() {
@@ -60,5 +50,4 @@ public class Persona implements Serializable {
     }
     
     
-
 }

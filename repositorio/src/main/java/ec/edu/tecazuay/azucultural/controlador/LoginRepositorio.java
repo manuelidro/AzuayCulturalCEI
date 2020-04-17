@@ -5,16 +5,12 @@
  */
 package ec.edu.tecazuay.azucultural.controlador;
 
-import ec.edu.tecazuay.azucultural.modelo.Persona;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.query.Param;
+import ec.edu.tecazuay.azucultural.modelo.Login;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  *
  * @author alumno
  */
-public interface LoginRepositorio extends CrudRepository<Persona, Long>{
-    @Query("Select u from Persona u where u.usuario = :usu and u.contrasenia = :pass")
-Persona validarUsuario(@Param("usu")String usu,@Param("pass")String pass);
+public interface LoginRepositorio extends JpaRepository<Login, Long>{
 }

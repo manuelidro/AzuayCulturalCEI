@@ -5,8 +5,10 @@
  */
 package ec.edu.tecazuay.azucultural.vista;
 
-import ec.edu.tecazuay.azucultural.controlador.EventoRepositorio;
-import ec.edu.tecazuay.azucultural.modelo.Evento;
+import ec.edu.tecazuay.azucultural.controlador.LoginRepositorio;
+import ec.edu.tecazuay.azucultural.controlador.PersonaRepositorio;
+import ec.edu.tecazuay.azucultural.modelo.Login;
+import ec.edu.tecazuay.azucultural.modelo.Persona;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -21,38 +23,38 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
- * @author alumno
+ * @author Fernando
  */
 @CrossOrigin
 @RestController
-@RequestMapping("/evento")
-public class EventoRest {
-
-    @Autowired
-    EventoRepositorio eventoRepositorio;
+@RequestMapping("/login")
+public class LoginRest {
+     @Autowired
+    LoginRepositorio loginRepositorio;
 
     @GetMapping("")
-    public List<Evento> listar() {
-        return eventoRepositorio.findAll();
+    public List<Login> listar() {
+        return loginRepositorio.findAll();
     }
 
-    @GetMapping("/{idEvento}")
-    public Evento recuperar(@PathVariable Long idEvento) {
-        return eventoRepositorio.findById(idEvento).get();
+    @GetMapping("/{idLogin}")
+    public Login recuperar(@PathVariable Long idLogin) {
+        return loginRepositorio.findById(idLogin).get();
     }
 
     @PostMapping("")
-    public Evento guardar(@RequestBody Evento evento) {
-        return eventoRepositorio.save(evento);
+    public Login guardar(@RequestBody Login log) {
+        return loginRepositorio.save(log);
     }
 
-    @DeleteMapping("/{idEvento}")
-    public void borrar(@PathVariable Long idEvento) {
-        eventoRepositorio.deleteById(idEvento);
+    @DeleteMapping("/{idLogin}")
+    public void borrar(@PathVariable Long idLogin) {
+        loginRepositorio.deleteById(idLogin);
     }
-
-    @PutMapping("/{idEvento}")
-    public Evento Actualizar(@RequestBody Evento evento) {
-        return eventoRepositorio.save(evento);
+    
+    @PutMapping("/{idLogin}") 
+    public Login actualizar(@RequestBody Login log) {
+        return loginRepositorio.save(log);
     }
+    
 }

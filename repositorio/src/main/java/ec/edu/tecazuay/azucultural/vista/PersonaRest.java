@@ -10,6 +10,8 @@ import ec.edu.tecazuay.azucultural.controlador.PersonaRepositorio;
 import ec.edu.tecazuay.azucultural.modelo.Persona;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,6 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author alumno
  */
+@CrossOrigin
 @RestController
 @RequestMapping("/persona")
 public class PersonaRest {
@@ -52,18 +55,23 @@ public class PersonaRest {
         personaRepositorio.deleteById(idPersona);
     }
     
-    /*@PutMapping("") 
-    public Persona crear(@RequestBody Persona person) {
+    @PutMapping("/{idPersona}") 
+    public Persona actualizar(@RequestBody Persona person) {
         return personaRepositorio.save(person);
-    }*/
+    }
+    
+    
+ 
 
+/*
     @Autowired
     LoginRepositorio loginRepositorio;
 
-    @RequestMapping(value = "/{usuario}/{contrasenia}", method = RequestMethod.GET)
+    @RequestMapping(value = {"email", "password"}, method = RequestMethod.GET)
     @ResponseBody
 
-    public Persona login(@PathVariable String usuario, @PathVariable String contrasenia) {
-        return loginRepositorio.validarUsuario(usuario, contrasenia);
+    public Persona loginPersona(@PathVariable ("email") String email, @PathVariable ("password") String password) {
+        return loginRepositorio.validarUsuario(email, password);
     }
+*/
 }
