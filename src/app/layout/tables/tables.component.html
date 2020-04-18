@@ -1,354 +1,183 @@
-<div [@routerTransition]>
-    <app-page-header [heading]="'Tables'" [icon]="'fa-table'"></app-page-header>
-    <div class="row">
-        <div class="col col-xl-6 col-lg-12">
-            <div class="card mb-3">
-                <div class="card-header">
-                    Basic example
-                </div>
-                <div class="card-body table-responsive">
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Username</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="card-header">Table head options</div>
-                <div class="card-body table-responsive">
-                    <table class="table">
-                        <thead class="thead-inverse">
-                        <tr>
-                            <th>#</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Username</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <table class="table">
-                        <thead class="thead-default">
-                        <tr>
-                            <th>#</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Username</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="card-header">Bordered table</div>
-                <div class="card-body table-responsive">
-                    <table class="table table-bordered">
-                        <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Username</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@TwBootstrap</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="card-header">Small table</div>
-                <table class="table table-sm">
-                    <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Username</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Corpus Christi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+
+
+
+
+<body>
+  <div class="padre">
+
+    <header class="header">
+      <div class="menu margen-interno">
+        <div class="logo">
+          <a href="dashboard">Azuay Cultural</a>
         </div>
-        <div class="col col-xl-6 col-lg-12">
-            <div class="card mb-3">
-                <div class="card-header">Inverse table</div>
-                <div class="card-body table-responsive">
-                    <table class="table table-inverse">
-                        <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Username</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="card-header">Striped Rows</div>
-                <div class="card-body table-responsive">
-                    <table class="table table-hover table-striped">
-                        <thead>
-                        <tr>
-                            <th>Page</th>
-                            <th>Visits</th>
-                            <th>% New Visits</th>
-                            <th>Revenue</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>/index.html</td>
-                            <td>1265</td>
-                            <td>32.3%</td>
-                            <td>$321.33</td>
-                        </tr>
-                        <tr>
-                            <td>/about.html</td>
-                            <td>261</td>
-                            <td>33.3%</td>
-                            <td>$234.12</td>
-                        </tr>
-                        <tr>
-                            <td>/sales.html</td>
-                            <td>665</td>
-                            <td>21.3%</td>
-                            <td>$16.34</td>
-                        </tr>
-                        <tr>
-                            <td>/blog.html</td>
-                            <td>9516</td>
-                            <td>89.3%</td>
-                            <td>$1644.43</td>
-                        </tr>
-                        <tr>
-                            <td>/404.html</td>
-                            <td>23</td>
-                            <td>34.3%</td>
-                            <td>$23.52</td>
-                        </tr>
-                        <tr>
-                            <td>/services.html</td>
-                            <td>421</td>
-                            <td>60.3%</td>
-                            <td>$724.32</td>
-                        </tr>
-                        <tr>
-                            <td>/blog/post.html</td>
-                            <td>1233</td>
-                            <td>93.2%</td>
-                            <td>$126.34</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="card-header">Hoverable rows</div>
-                <table class="card-body table table-hover">
-                    <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Username</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="card mb-3">
-                <div class="card-header">Contextual classes</div>
-                <table class="card-body table">
-                    <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Username</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="table-active">
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr class="table-success">
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr class="table-info">
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                    <tr class="table-warning">
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                    <tr class="table-danger">
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+        <nav class="nav">
+          <a href="dashboard"><i class="fa fa-book" aria-hidden="true"></i><span class="off">Eventos</span></a>
+          <a href="tables"><i class="fa fa-user" aria-hidden="true"></i><span class="off">Eventos Destacados</span></a>
+          <a href="grid"><i class="fa fa-star" aria-hidden="true"></i><span class="off">Eventos Favoritos</span></a>
+          <a href="components"><i class="fa fa-map" aria-hidden="true"></i><span class="off">Mapa</span></a>
+          <!--         <a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span class="off">contacto</span></a>-->
+        </nav>
+        <div class="social">
+          <div><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+          <div><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></div>
         </div>
-    </div>
-</div>
+      </div>
+      <div class="texto-principal margen-interno">
+        <h1><b>Eventos Destacados</b></h1>
+
+      </div>
+
+
+
+    </header>
+    <section class="section  margen-interno">
+      <div class="articulos">
+        <article class="article">
+            <h4><b>
+                CORPUS CHRISTI</b></h4>
+  
+            <br>
+  
+            <img src="assets/images/feria.jpg"> <br>
+  
+            <p>
+                Rituales de fe, tradiciones y dulces en Cuenca por el Corpus Christi........
+              <br>
+              Te traemos el mejor evento cultural y gastronomico para el 04 de Julio en el Centro de la ciudad de Cuenca, Parque Abdon Calderon
+              <br>
+              <a href="pagina-corpus">
+                Más Información 
+              </a>
+              <br>
+              <a href="components">
+                 Verlo en el Mapa
+                </a>
+            </p>
+  
+  
+          </article>
+        <article class="article">
+          <h4><b>
+              ¡LA ABDUCCIÓN!</b></h4>
+
+          <br>
+
+          <img src="assets/images/cuenca.jpg"> <br>
+
+          <p>
+            Una fiesta de otro mundo..
+            <br>
+            Te traemos el mejor evento para el 03 de abril en el Colegio de Arquitectos "C.A.E" ubicado en el sector del
+            Control Sur - Narancay.
+            <br>
+            <a href="pagina-cuenca">
+              Más Información 
+            </a>
+            <br>
+            <a href="components">
+               Verlo en el Mapa
+              </a>
+          </p>
+
+
+        </article>
+
+        <article class="article">
+            <h4><b>
+                ROTO FEST</b></h4>
+  
+            <br>
+  
+            <img src="assets/images/roto.jpeg"> <br>
+  
+            <p>
+              Música y Diversión para todo el mundo....
+              <br>
+             El mejor evento a nivel nacional de conciertos para el dia  28 y 29  de abril en el MegaParque Tarqui-Guzho,
+             Sector Facultad de Artes
+              <br>
+              <a href="pagina-roto">
+                Más Información 
+              </a>
+              <br>
+              <a href="components">
+                 Verlo en el Mapa
+                </a>
+            </p>
+  
+  
+          </article>
+      </div>
+
+      <br>
+
+      <aside class="aside">
+
+
+
+
+        <br>
+
+
+
+        <div class="publicidad">
+
+
+
+          <img src="assets/images/giphy.gif" width="350" height="200">
+
+
+
+
+        </div>
+
+
+        <br>
+
+        <div class="publicidad">
+
+
+
+          <img src="assets/images/coca.gif" width="350" height="200">
+
+
+
+
+        </div>
+
+
+
+
+
+
+      </aside>
+
+    </section>
+
+  </div>
+
+  <footer class="footer margen-interno">
+
+    <nav class="pie">
+
+      <p><b>Azuay cultural</b></p>
+
+      <p><b> CEI 2020</b></p>
+
+    </nav>
+
+  </footer>
+
+</body>
+
+</html>
