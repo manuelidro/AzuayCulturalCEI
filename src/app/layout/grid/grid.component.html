@@ -1,266 +1,85 @@
-<div [@routerTransition]>
-    <app-page-header [heading]="'Bootstrap Grid'" [icon]="'fa-wrench'"></app-page-header>
+<body>
+    <div class="padre">
 
-    <div class="row">
-        <div class="col-xl-12 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-12
+        <header class="header">
+            <div class="menu margen-interno">
+                <div class="logo">
+                    <a href="dashboard">Azuay Cultural</a>
+                </div>
+                <nav class="nav">
+                    <a href="dashboard"><i class="fa fa-book" aria-hidden="true"></i><span
+                            class="off">Eventos</span></a>
+                    <a href="tables"><i class="fa fa-user" aria-hidden="true"></i><span class="off">Eventos
+                            Destacados</span></a>
+                    <a href="grid"><i class="fa fa-star" aria-hidden="true"></i><span class="off">Eventos
+                            Favoritos</span></a>
+                    <a href="components"><i class="fa fa-map" aria-hidden="true"></i><span class="off">Mapa</span></a>
+                    <!--         <a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span class="off">contacto</span></a>-->
+                </nav>
+                <div class="social">
+                    <div><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                    <div><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- /.row -->
+            <div class="texto-principal margen-interno">
+                <h1><b>Administrar Eventos</b></h1>
+        
+              </div>
 
-    <div class="row">
-        <div class="col-xl-6 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-6
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-6 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-6
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.row -->
 
-    <div class="row">
-        <div class="col-xl-4 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-4
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-4
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-4
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.row -->
 
-    <div class="row">
-        <div class="col-xl-3 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-3
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-3
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-3
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-3
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.row -->
+        </header>
+        <section class="section  margen-interno" *ngFor="let evento of eventos">
+            <div class="articulos">
+                <article class="article">
+                    <h4><b>{{evento.nombreEvento}}</b></h4>
 
-    <div class="row">
-        <div class="col-xl-2 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-2
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-2 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-2
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-2 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-2
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-2 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-2
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-2 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-2
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-2 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-2
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.row -->
 
-    <div class="row">
-        <div class="col-xl-1 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-1
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-1 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-1
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-1 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-1
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-1 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-1
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-1 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-1
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-1 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-1
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-1 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-1
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-1 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-1
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-1 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-1
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-1 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-1
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-1 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-1
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-1 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-1
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.row -->
+                    <p>
+                        {{evento.descripcion}}
+                    </p>
 
-    <div class="row">
-        <div class="col-xl-8 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-8
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-4
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.row -->
+                    <p>{{evento.hora}}</p>
 
-    <div class="row">
-        <div class="col-xl-3 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-3
-                </div>
+                    <p>{{evento.fecha}}</p>
+
+
+                </article>
+
+                
+                <button type="button" class="btn btn-outline-primary" (click)="nuevo()">Crear Evento</button>
+
+                <button type="button" class="btn btn-outline-warning" (click)="editar(evento.idEvento)">Editar Evento</button>
+
+                <button type="button" class="btn btn-outline-danger" (click)="eliminar(evento.idEvento)">Eliminar Evento</button>
+
+                <button type="button" class="btn btn-outline-success" (click)="listar()">Actualizar</button>
             </div>
-        </div>
-        <div class="col-xl-6 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-6
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 text-xs-center">
-            <div class="card mb-3">
-                <div class="card-body">
-                    .col-xl-3
-                </div>
-            </div>
-        </div>
+
+            <br>
+
+
+
+        </section>
+
+
+
     </div>
-    <!-- /.row -->
-</div>
+
+
+
+
+
+    <footer class="footer margen-interno">
+
+        <nav class="pie">
+
+            <p><b>Azuay cultural</b></p>
+
+            <p><b> CEI 2020</b></p>
+
+        </nav>
+
+    </footer>
+
+</body>

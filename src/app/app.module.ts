@@ -16,6 +16,7 @@ import {AuthService} from '../app/Services/auth.service';
 
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { CrearEventoComponent } from './crear-evento/crear-evento.component';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { SignupComponent } from './signup/signup.component';
         AppRoutingModule,
         FormsModule,
     ],
-    declarations: [AppComponent, RecuperarComponent],
+    declarations: [AppComponent, RecuperarComponent, CrearEventoComponent],
     providers: [AuthGuard, AuthService],
     bootstrap: [AppComponent]
 })

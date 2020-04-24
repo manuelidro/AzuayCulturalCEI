@@ -1,0 +1,39 @@
+<section>
+  <h1>Crear Evento</h1>
+  <form>
+    <div class="card">
+      Nombre del evento:<br>
+      <input type="text" [(ngModel)]="evento.nombreEvento" name="nombreEvento">
+
+    </div>
+
+    <div class="card">
+      Descripción del evento:<br>
+      <input type="text" [(ngModel)]="evento.descripcion" name="descripcion">
+
+    </div>
+
+    <div class="card">
+      Fecha del evento:<br>
+      <input type="text" [(ngModel)]="evento.fecha" name="fecha">
+
+    </div>
+
+    <div class="card">
+      Hora del evento:<br>
+      <input type="text" [(ngModel)]="evento.hora" name="hora">
+
+    </div>
+
+    <div class="boton">
+
+
+      <button type="button" class="btn btn-outline-danger" (click)="regresar()">Regresar</button>
+
+      <button type="button" class="btn btn-outline-success" (click)="guardar()">Crear evento</button>
+
+
+    </div>
+
+  </form>
+</section>
