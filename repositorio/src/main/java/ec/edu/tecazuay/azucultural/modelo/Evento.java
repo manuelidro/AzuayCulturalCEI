@@ -26,8 +26,8 @@ public class Evento implements Serializable{
     private Long idEvento;
     
     private String nombreEvento;
-    private Date fecha;
-    private Date hora;
+    private String fecha;
+    private String hora;
     private String descripcion;
     private boolean ranking;
     private String url;
@@ -52,22 +52,23 @@ public class Evento implements Serializable{
         this.nombreEvento = nombreEvento;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
-    public Date getHora() {
+    public String getHora() {
         return hora;
     }
 
-    public void setHora(Date hora) {
+    public void setHora(String hora) {
         this.hora = hora;
     }
 
+  
     public String getDescripcion() {
         return descripcion;
     }
