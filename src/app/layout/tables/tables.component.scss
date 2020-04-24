@@ -6,6 +6,10 @@
 a{
     text-decoration: none;
 }
+
+.mas:hover{
+    color: rgb(53, 51, 51);
+}
 .padre{
     display: flex;
     flex-flow: column nowrap;
@@ -14,7 +18,7 @@ a{
     padding: 0 50px;
 }
     .header{
-        
+        background-image: url(./../../../assets/images/bandera.jpg);
         background-position:center;
         background-attachment: contain;
         background-size:cover;
@@ -84,12 +88,12 @@ a{
             flex: 2 1 auto;
         }
             .article{
-            color: #444;
+            color: rgb(20, 20, 20);
             font-size:16px;
             letter-spacing: 1px;
             margin: 10px 10px 0 0px;
             flex: 1 1 45%;
-            background: #ececec;
+            background: #f1f1f1;
         }
             .article img{
                 width: 50%;
@@ -156,3 +160,11 @@ a{
     }
 }
 }
+
+p{
+    padding-top: 20px;
+    font-size: 18px;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
